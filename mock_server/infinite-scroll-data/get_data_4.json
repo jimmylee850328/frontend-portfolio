@@ -1,0 +1,67 @@
+{
+    "handling_result": {
+        "status": "Okay",
+        "message": "Data is successfully Retrieved.",
+        "error": ""
+    },
+    "return_data": {
+        "mock_data": [
+            {
+                "title": "Labyrinthine Whispers",
+                "text": "Navigate labyrinthine whispers where echoes of the past guide the way.",
+                "color": "#E9E2DF"
+            },
+            {
+                "title": "Cerulean Enchantment",
+                "text": "Submerge in cerulean enchantment where depths conceal ancient mysteries.",
+                "color": "#D1E9E9"
+            },
+            {
+                "title": "Ethereal Embrace",
+                "text": "In an ethereal embrace, spirits guide those who seek the unknown.",
+                "color": "#D8E5DF"
+            },
+            {
+                "title": "Whispering Nebulas",
+                "text": "Through whispering nebulas, tales of cosmic wanderers intertwine.",
+                "color": "#E4E4DA"
+            },
+            {
+                "title": "Nocturnal Nexus",
+                "text": "In the nocturnal nexus, the threads of fate are woven under starlight.",
+                "color": "#D3E0E6"
+            },
+            {
+                "title": "Elysian Echo",
+                "text": "An elysian echo beckons adventurers to uncover hidden realms beyond.",
+                "color": "#D6E1DB"
+            },
+            {
+                "title": "Luminescent Odyssey",
+                "text": "Embark on a luminescent odyssey to unveil truths held by light and shadow.",
+                "color": "#E9E1E7"
+            },
+            {
+                "title": "Twilight Whispers",
+                "text": "Twilight whispers unveil tales where day and night find common ground.",
+                "color": "#E5DFD4"
+            },
+            {
+                "title": "Nebulous Harmony",
+                "text": "Amidst nebulous harmony, discordant notes find unity in cosmic melodies.",
+                "color": "#D7E8E7"
+            },
+            {
+                "title": "Cascading Dreams",
+                "text": "Follow cascading dreams to a realm where imagination shapes reality.",
+                "color": "#E4DFE1"
+            }
+        ],
+        "paging_info": {
+            "limit": 10,
+            "page": 5,
+            "total_pages": 5,
+            "total_objects": 50
+        }
+    }
+}

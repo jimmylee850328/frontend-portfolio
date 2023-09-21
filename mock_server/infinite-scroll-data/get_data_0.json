@@ -1,0 +1,67 @@
+{
+    "handling_result": {
+        "status": "Okay",
+        "message": "Data is successfully Retrieved.",
+        "error": ""
+    },
+    "return_data": {
+        "mock_data": [
+            {
+                "title": "Sword of Destiny",
+                "text": "Unleash the power of the legendary sword and conquer all odds!",
+                "color": "#D7E8BA"
+            },
+            {
+                "title": "Galactic Chronicles",
+                "text": "Embark on an interstellar journey to save the universe from the brink of chaos.",
+                "color": "#F0D9B5"
+            },
+            {
+                "title": "Chronicles of the Mystic Realm",
+                "text": "Discover ancient artifacts and unveil the secrets of a world filled with magic.",
+                "color": "#C7DBE6"
+            },
+            {
+                "title": "Neon Dreamscape",
+                "text": "Navigate through the neon-lit cityscape where secrets lurk around every corner.",
+                "color": "#E7D8D0"
+            },
+            {
+                "title": "Eternal Echoes",
+                "text": "Journey through time to rewrite history and mend the threads of destiny.",
+                "color": "#E5E6D3"
+            },
+            {
+                "title": "Celestial Serenade",
+                "text": "Join the celestial orchestra and restore harmony to a world in discord.",
+                "color": "#F2E5D4"
+            },
+            {
+                "title": "Skyward Odyssey",
+                "text": "Soar through the skies on a mystical airship in search of lost civilizations.",
+                "color": "#C8E1E4"
+            },
+            {
+                "title": "Phantom Melodies",
+                "text": "Unravel the mysteries of a haunted melody that binds the living and the dead.",
+                "color": "#F5E1DF"
+            },
+            {
+                "title": "Steamheart Chronicles",
+                "text": "Venture into a steampunk world where gears and steam power rule the land.",
+                "color": "#E2E8D9"
+            },
+            {
+                "title": "Moonlit Enchantment",
+                "text": "Under the moon's spell, embark on a journey to break a timeless curse.",
+                "color": "#E9D6E8"
+            }
+        ],
+        "paging_info": {
+            "limit": 10,
+            "page": 1,
+            "total_pages": 5,
+            "total_objects": 50
+        }
+    }
+}

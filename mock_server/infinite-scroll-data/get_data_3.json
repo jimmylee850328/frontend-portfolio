@@ -1,0 +1,67 @@
+{
+    "handling_result": {
+        "status": "Okay",
+        "message": "Data is successfully Retrieved.",
+        "error": ""
+    },
+    "return_data": {
+        "mock_data": [
+            {
+                "title": "Luminous Reverie",
+                "text": "In the realm of luminous reverie, dreams shape the fabric of reality.",
+                "color": "#EFE0D6"
+            },
+            {
+                "title": "Mystic Moonlight",
+                "text": "Under the mystic moonlight, secrets from eons past come to light.",
+                "color": "#E1E2EF"
+            },
+            {
+                "title": "Celestial Echoes",
+                "text": "Echoes of the celestial realm guide mortals on an ethereal journey.",
+                "color": "#E5DBE0"
+            },
+            {
+                "title": "Aurora Whispers",
+                "text": "Amidst aurora whispers, ancient tales find new life in the night sky.",
+                "color": "#DCE6E5"
+            },
+            {
+                "title": "Enchanted Elysium",
+                "text": "In the enchanted elysium, magical wonders bloom with every step.",
+                "color": "#E5D9E9"
+            },
+            {
+                "title": "Sylvan Serenity",
+                "text": "Experience sylvan serenity as nature's harmony intertwines with magic.",
+                "color": "#DDE6D3"
+            },
+            {
+                "title": "Whispering Breezes",
+                "text": "Whispering breezes carry tales of distant lands to eager ears.",
+                "color": "#E7E3DF"
+            },
+            {
+                "title": "Ephemeral Odyssey",
+                "text": "Embark on an ephemeral odyssey where reality shifts like the sands of time.",
+                "color": "#E4D5D9"
+            },
+            {
+                "title": "Radiant Aurora",
+                "text": "Radiant auroras dance across the sky, painting tales of cosmic beauty.",
+                "color": "#E8E7DB"
+            },
+            {
+                "title": "Mystic Solitude",
+                "text": "Amidst mystic solitude, lost truths resurface to shape destinies anew.",
+                "color": "#E0EFE9"
+            }
+        ],
+        "paging_info": {
+            "limit": 10,
+            "page": 4,
+            "total_pages": 5,
+            "total_objects": 50
+        }
+    }
+}

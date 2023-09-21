@@ -1,0 +1,67 @@
+{
+    "handling_result": {
+        "status": "Okay",
+        "message": "Data is successfully Retrieved.",
+        "error": ""
+    },
+    "return_data": {
+        "mock_data": [
+            {
+                "title": "Crimson Moon Saga",
+                "text": "When the crimson moon rises, destiny's threads intertwine in unforeseen ways.",
+                "color": "#F3E0D2"
+            },
+            {
+                "title": "Nebula Nomads",
+                "text": "Roam the vast nebulas as interstellar nomads on a quest for a new home.",
+                "color": "#D9E2EC"
+            },
+            {
+                "title": "Enchanted Masquerade",
+                "text": "Attend an otherworldly masquerade where secrets are unveiled under moonlight.",
+                "color": "#D0E7DF"
+            },
+            {
+                "title": "Dreamscape Divinity",
+                "text": "In the dreamscape realm, the boundaries between dreams and reality blur.",
+                "color": "#E4E9DF"
+            },
+            {
+                "title": "Wings of Eternity",
+                "text": "With wings of light, protect the realm from the encroaching darkness.",
+                "color": "#DDE0E3"
+            },
+            {
+                "title": "Symphony of Souls",
+                "text": "Harmonize the symphony of souls to restore peace to the ethereal realm.",
+                "color": "#F5E0D4"
+            },
+            {
+                "title": "Stardust Serendipity",
+                "text": "Follow the stardust trail to discover serendipitous encounters among the cosmos.",
+                "color": "#E3DFE8"
+            },
+            {
+                "title": "Crimson Compass",
+                "text": "The mysterious crimson compass guides the way through uncharted territories.",
+                "color": "#E1D3D5"
+            },
+            {
+                "title": "Aqua Enigma",
+                "text": "Unlock the secrets of the deep sea and its connection to an ancient prophecy.",
+                "color": "#D3EFEF"
+            },
+            {
+                "title": "Echoes of Valor",
+                "text": "Echoes of valiant heroes inspire a new generation to rise against darkness.",
+                "color": "#E0DDD9"
+            }
+        ],
+        "paging_info": {
+            "limit": 10,
+            "page": 3,
+            "total_pages": 5,
+            "total_objects": 50
+        }
+    }
+}

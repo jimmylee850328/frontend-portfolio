@@ -1,0 +1,67 @@
+{
+    "handling_result": {
+        "status": "Okay",
+        "message": "Data is successfully Retrieved.",
+        "error": ""
+    },
+    "return_data": {
+        "mock_data": [
+            {
+                "title": "Crimson Legacy",
+                "text": "The legacy of heroes lives on as new champions rise to defend the realm.",
+                "color": "#E4D9DB"
+            },
+            {
+                "title": "Whispering Shadows",
+                "text": "Explore the shadows that hold the secrets of an enigmatic ancient society.",
+                "color": "#D6E9E4"
+            },
+            {
+                "title": "Starlight Rhapsody",
+                "text": "Dance under the starry night as a cosmic melody weaves fates together.",
+                "color": "#E1D5E3"
+            },
+            {
+                "title": "Echoes of Infinity",
+                "text": "Uncover the truth behind a forbidden technology that transcends space and time.",
+                "color": "#E7E0D4"
+            },
+            {
+                "title": "Aetherium Nexus",
+                "text": "Guardians of the Aetherium Nexus must prevent its fall into the wrong hands.",
+                "color": "#F1D8E0"
+            },
+            {
+                "title": "Emerald Quest",
+                "text": "Embark on a legendary quest to find the fabled emerald that grants untold power.",
+                "color": "#DFEED7"
+            },
+            {
+                "title": "Azure Skies",
+                "text": "Soar with majestic dragons in the azure skies and protect a world threatened by darkness.",
+                "color": "#D1E9E7"
+            },
+            {
+                "title": "Lumina Chronicles",
+                "text": "Awaken the ancient Lumina to thwart an imminent cosmic catastrophe.",
+                "color": "#D7E5EC"
+            },
+            {
+                "title": "Crystal Alchemy",
+                "text": "Master the art of crystal alchemy to restore balance to a fractured realm.",
+                "color": "#F2E3E6"
+            },
+            {
+                "title": "Whispers of the Ancients",
+                "text": "Decipher the whispers of ancient runes to unlock forgotten knowledge.",
+                "color": "#E7E0D1"
+            }
+        ],
+        "paging_info": {
+            "limit": 10,
+            "page": 2,
+            "total_pages": 5,
+            "total_objects": 50
+        }
+    }
+}
