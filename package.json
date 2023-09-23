@@ -1,5 +1,5 @@
 {
-  "name": "work-portfolio",
+  "name": "frontend-portfolio",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "echarts": "^5.4.3",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "jszip": "^3.10.1",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6",

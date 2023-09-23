@@ -39,6 +39,10 @@
             desc: "Use draggable chips with v-select to make custom features"
         },
         { 
+            name: "images-downloader",
+            desc: "Use JSZip to download selected images as zip"
+        },
+        { 
             name: "flex-vertical-table",
             desc: "CSS practice - Use flexbox to make the table alignment from horizontal to vertical"
         },

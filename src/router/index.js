@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/components/main.vue";
 import InfiniteScroll from "@/components/infinite-scroll/main.vue";
+import ImagesDownloader from "@/components/images-downloader/main.vue";
 import DraggableChipsWithSelect from "@/components/vuetify-custom-components/draggable-chips-with-select.vue";
 import FlexVerticalTable from "@/components/css-practice/flex-vertical-table.vue";
 import FlexEcharts from "@/components/css-practice/flex-echarts.vue";
@@ -17,6 +18,11 @@ const router = createRouter({
             path: "/infinite-scroll",
             name: "infinite-scroll",
             component: InfiniteScroll,
+        },
+        {
+            path: "/images-downloader",
+            name: "images-downloader",
+            component: ImagesDownloader,
         },
         {
             path: "/draggable-chips-with-select",
