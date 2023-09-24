@@ -118,7 +118,7 @@
 </script>
 
 <style lang="scss" scoped>
-    ::v-deep .custom-checkbox {
+    :deep(.custom-checkbox) {
         z-index: 2;
         position: absolute;
 
