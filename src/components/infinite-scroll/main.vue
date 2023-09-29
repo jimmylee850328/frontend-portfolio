@@ -18,18 +18,38 @@
         <v-card
             width="650"
             class="my-5"
-            :color="product.color"
         >
             <v-card-title>
                 <v-row no-gutters>
-                    {{ product.title }}
-                    <v-spacer />
-                    {{ index }}
+                    <span
+                        class="text-truncate"
+                        style="flex: 1"
+                    > 
+                        {{ product.title }} 
+                    </span>
+                    <span class="pl-2 flex-0-0"> {{ index }} </span>
                 </v-row>
             </v-card-title>
 
             <v-card-text>
-                {{ product.text }}
+                <v-img
+                    :src="product.url"
+                    :lazy-src="product.url"
+                    cover
+                >
+                    <template #placeholder>
+                        <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                        >
+                            <v-progress-circular
+                                indeterminate
+                                color="grey-lighten-5"
+                            />
+                        </v-row>
+                    </template>
+                </v-img>
             </v-card-text>
         </v-card>
     </v-row>
@@ -57,17 +77,18 @@
     import { get_products_ajax } from "@/utils/products.js";
     
     const show_loading = ref(false);
-    const total_objects = ref(null);
+    const total_objects = ref(5000);
+    const nums_per_round = ref(10);
     const products = ref([]);
-    const products_index = ref(10);
-    const count = ref(0);
+    const count = ref(1);
 
     const search = async () => {
         if ((total_objects.value && products.value.length >= total_objects.value) || show_loading.value) return;
         show_loading.value = true;
-        const return_data = await get_products_ajax(count.value++);
-        total_objects.value = return_data.paging_info.total_objects;
-        products.value = products.value.concat(return_data.mock_data);
+        for (let i = 0; i < nums_per_round.value; i++) {
+            const return_data = await get_products_ajax(count.value++);
+            products.value = products.value.concat(return_data);
+        }
         show_loading.value = false;
     };
 </script>

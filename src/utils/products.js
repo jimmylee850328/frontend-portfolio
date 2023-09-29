@@ -3,13 +3,13 @@ import { axiosConfig } from '../config/axiosConfig.js';
 
 export async function get_products_ajax (count) {
     try {
-        const response = await axios.post("/get_products/", { count: count }, axiosConfig);
+        const response = await axios.get(`https://jsonplaceholder.typicode.com/photos/${count}/`);
         const result = typeof response.data === 'object' ? response.data : JSON.parse(response.data);
         
-        return result.return_data;
+        return result;
         
     } catch (error) {
         console.error(error);
-        return { "status": "failed", "data": null };
+        return null;
     }
 }
