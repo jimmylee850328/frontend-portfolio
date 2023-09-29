@@ -4,7 +4,9 @@
         justify="center"
     >
         <div>
-            <h2> {{ title }} </h2>
+            <h2 class="text-center">
+                {{ title }}
+            </h2>
             <v-alert
                 v-if="subtitle"
                 type="info"

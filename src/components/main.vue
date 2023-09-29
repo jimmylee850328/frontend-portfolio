@@ -22,7 +22,7 @@
 <script setup>
     import { ref, computed, onMounted, reactive } from "vue";
 
-    const items_per_page = ref(5);
+    const items_per_page = ref(10);
     const exercise_headers = [
         { title: 'Name', align: 'center', key: 'name', width: "30%" },
         { title: 'Desc', align: 'center', key: 'desc', width: "60%" },
@@ -41,6 +41,10 @@
         { 
             name: "images-downloader",
             desc: "Use JSZip to download selected images as zip"
+        },
+        { 
+            name: "grid-layout",
+            desc: "Drag the element onto the grid layout to create a new grid item"
         },
         { 
             name: "flex-vertical-table",
