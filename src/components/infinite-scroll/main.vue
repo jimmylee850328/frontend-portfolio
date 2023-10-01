@@ -98,5 +98,6 @@
         position: fixed;
         right: 10px;
         bottom: 10px;
+        z-index: 2;
     }
 </style>
