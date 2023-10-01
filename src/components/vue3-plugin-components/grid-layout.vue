@@ -2,18 +2,24 @@
     <exercise-title 
         title="vue3-grid-layout test" 
         subtitle="Drag the element onto the grid layout to create a new grid item"
+        class="mb-2"
     />
     
-    <v-row no-gutters>
+    <v-row
+        no-gutters
+        align="end"
+    >
         <div
             v-for="(item, index) in draggable_items"
             :key="index"
-            class="droppable-element ma-5"
+            class="droppable-element ma-1"
             draggable="true"
             unselectable="on"
             :style="{width: `${item.width}px`, height: `${item.height}px`, background: item.background}"
             @drag="handle_drag($event, item)"
             @dragend="handle_drag_end($event, item)"
+            @touchmove="handle_drag($event, item)"
+            @touchend="handle_drag_end($event, item)"
         >
             drag me
         </div>
@@ -69,7 +75,7 @@
             class="grid-item d-flex align-center justify-center"
             :style="{background: item.background}"
         >
-            {{ item.i }}
+            <span class="text-pre-line">{{ item.i }}</span>
         </grid-item>
     </grid-layout>
 </template>
@@ -138,6 +144,7 @@
             background: '#ffe020'
         }
     ]);
+    const current_position = ref([]);
 
     const hex_to_rgba = (hex_color, alpha) => {
         hex_color = hex_color.replace(/^#/, '');
@@ -153,7 +160,6 @@
         return `rgb(${red}, ${green}, ${blue}, ${alpha})`;
     };
 
-
     const allow_drop = (e) => {
         e.preventDefault();
     };
@@ -162,13 +168,15 @@
         const width = (window.innerWidth - margin.value[0] * (col_num.value + 1)) / col_num.value;
         const height = row_height.value + margin.value[1];
         const rect = e.target.getBoundingClientRect();
-        const m = 20; // ma-5
+        const m = 4; // ma-1
 
-        let new_x = Math.ceil((e.offsetX + rect.x - m + margin.value[0]) / width) - 1;
+        const event_x = e.offsetX === undefined ? e.touches[0].clientX - rect.left : e.offsetX;
+        const event_y = e.offsetY === undefined ? e.touches[0].clientY - rect.top : e.offsetY;
+        let new_x = Math.ceil((event_x + rect.left) / (width + margin.value[0])) - 1;
         if (new_x < 0) new_x = 0;
         else if (new_x > col_num.value - new_w) new_x = col_num.value - new_w;
 
-        let new_y = Math.ceil((e.offsetY - rect.height - m) / height) - 1;
+        let new_y = Math.ceil((event_y - rect.height - m) / height) - 1;
         if (new_y < 0) new_y = 0;
         else if (new_y > row_num.value - new_h) new_y = row_num.value - new_h;
 
@@ -176,7 +184,10 @@
     };
 
     const handle_drag = (e, item) => {
+        e.preventDefault();
+
         const [new_x, new_y] = get_new_position(e, item.w, item.h);
+        current_position.value = [new_x, new_y];
 
         if (first.value) {
             first.value = false;
@@ -185,7 +196,7 @@
                 y: new_y,
                 w: item.w,
                 h: item.h,
-                i: `new item(${e.x}, ${e.y})`,
+                i: `(${new_x}, ${new_y})\n${item.w} x ${item.h})`,
                 background: hex_to_rgba(item.background, 0.5)
             });
         } else {
@@ -195,14 +206,16 @@
     };
 
     const handle_drag_end = (e, item) => {
-        const [new_x, new_y] = get_new_position(e, item.w, item.h);
+        e.preventDefault();
+        
+        const [new_x, new_y] = current_position.value;
 
         layout.value.push({
             x: new_x,
             y: new_y,
             w: item.w,
             h: item.h,
-            i: `new item(${e.x}, ${e.y})`,
+            i: `(${new_x}, ${new_y})\n${item.w} x ${item.h}`,
             background: hex_to_rgba(item.background, 1)
         });
         temp_layout.value.pop();
