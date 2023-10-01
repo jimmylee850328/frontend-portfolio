@@ -4,7 +4,7 @@
         subtitle="v-select counts all chips in the all zones."
     />
 
-    <v-card>
+    <v-card class="mt-5">
         <v-card-title>
             People Filter
         </v-card-title>
