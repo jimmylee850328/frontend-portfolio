@@ -6,21 +6,16 @@
         <div>
             <router-view />
         </div>
-        <v-footer
-            app
-            class="bg-transparent d-flex justify-end mb-2"
-        >
-            <v-btn
-                class="text-none"
-                size="small"
-                @click="view_on_github"
-            > 
-                <v-icon class="pr-2">
-                    mdi-github
-                </v-icon>
-                View on Github
-            </v-btn>
-        </v-footer>
+        <v-btn
+            class="text-none github-button"
+            size="small"
+            @click="view_on_github"
+        > 
+            <v-icon class="pr-2">
+                mdi-github
+            </v-icon>
+            View on Github
+        </v-btn>
     </v-app>
 </template>
 
@@ -31,4 +26,9 @@
 </script>
 
 <style scoped>
+    .github-button {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
 </style>
