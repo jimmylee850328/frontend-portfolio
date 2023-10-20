@@ -54,6 +54,10 @@
             name: "flex-echarts",
             desc: "CSS practice - Implement responsive width for Echarts with flex display"
         },
+        {
+            name: "simple-maze-game",
+            desc: "Use canvas to create a simple maze game, use mouse to play it!"
+        },
     ];
 </script>
 
