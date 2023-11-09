@@ -1092,3 +1092,131 @@ export const county_map_data = {
     ],
     "UTF8Encoding": true
 };
+
+export const current_map_data = [
+    {
+        "name": "新竹縣",
+        "value": 7,
+        "ms_value": 15
+    },
+    {
+        "name": "南投縣",
+        "value": 4,
+        "ms_value": 7.6
+    },
+    {
+        "name": "苗栗縣",
+        "value": 9,
+        "ms_value": 22
+    },
+    {
+        "name": "臺中市",
+        "value": 9,
+        "ms_value": 21.1
+    },
+    {
+        "name": "桃園市",
+        "value": 7,
+        "ms_value": 15.2
+    },
+    {
+        "name": "連江縣",
+        "value": 9,
+        "ms_value": 21.3
+    },
+    {
+        "name": "新北市",
+        "value": 6,
+        "ms_value": 13.8
+    },
+    {
+        "name": "嘉義市",
+        "value": 5,
+        "ms_value": 9.1
+    },
+    {
+        "name": "金門縣",
+        "value": 6,
+        "ms_value": 13.2
+    },
+    {
+        "name": "金門縣烏坵鄉",
+        "value": -998,
+        "ms_value": -998
+    },
+    {
+        "name": "澎湖縣",
+        "value": 10,
+        "ms_value": 26.4
+    },
+    {
+        "name": "新竹市",
+        "value": 7,
+        "ms_value": 15.8
+    },
+    {
+        "name": "蘭嶼綠島",
+        "value": 11,
+        "ms_value": 30.8
+    },
+    {
+        "name": "臺東縣",
+        "value": 10,
+        "ms_value": 25.1
+    },
+    {
+        "name": "雲林縣",
+        "value": 10,
+        "ms_value": 26.2
+    },
+    {
+        "name": "花蓮縣",
+        "value": 5,
+        "ms_value": 9.2
+    },
+    {
+        "name": "彰化縣",
+        "value": 10,
+        "ms_value": 24.9
+    },
+    {
+        "name": "宜蘭縣",
+        "value": 6,
+        "ms_value": 13
+    },
+    {
+        "name": "嘉義縣",
+        "value": 9,
+        "ms_value": 23.5
+    },
+    {
+        "name": "臺南市",
+        "value": 10,
+        "ms_value": 25.6
+    },
+    {
+        "name": "恆春半島",
+        "value": 11,
+        "ms_value": 31.8
+    },
+    {
+        "name": "屏東縣",
+        "value": 10,
+        "ms_value": 26.1
+    },
+    {
+        "name": "基隆市",
+        "value": 5,
+        "ms_value": 10
+    },
+    {
+        "name": "臺北市",
+        "value": 4,
+        "ms_value": 6.2
+    },
+    {
+        "name": "高雄市",
+        "value": 8,
+        "ms_value": 19.6
+    }
+];
