@@ -62,6 +62,10 @@
             name: "animation-number",
             desc: "CSS practice - Change number with CSS animation"
         },
+        { 
+            name: "flip-menu",
+            desc: "CSS practice - Flip menu with CSS animation"
+        },
     ];
 </script>
 

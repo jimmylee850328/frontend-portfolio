@@ -4,10 +4,11 @@ import InfiniteScroll from "@/components/infinite-scroll/main.vue";
 import DraggableChipsWithSelect from "@/components/vue3-plugin-components/draggable-chips-with-select.vue";
 import ImagesDownloader from "@/components/vue3-plugin-components/image-downloader.vue";
 import GridLayout from "@/components/vue3-plugin-components/grid-layout.vue";
+import SimpleMazeGame from "@/components/game/simple-maze-game.vue";
 import FlexVerticalTable from "@/components/css-practice/flex-vertical-table.vue";
 import FlexEcharts from "@/components/css-practice/flex-echarts.vue";
 import AnimationNumber from "@/components/css-practice/animation-number.vue";
-import SimpleMazeGame from "@/components/game/simple-maze-game.vue";
+import FlipMenu from "@/components/css-practice/flip-menu.vue";
 
 const router = createRouter({
     history: createWebHashHistory("/frontend-portfolio/"),
@@ -56,6 +57,11 @@ const router = createRouter({
             path: "/simple-maze-game",
             name: "simple-maze-game",
             component: SimpleMazeGame,
+        },
+        {
+            path: "/flip-menu",
+            name: "flip-menu",
+            component: FlipMenu,
         },
     ],
 });
