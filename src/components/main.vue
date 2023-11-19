@@ -46,6 +46,10 @@
             name: "grid-layout",
             desc: "Drag the element onto the grid layout to create a new grid item"
         },
+        {
+            name: "simple-maze-game",
+            desc: "Use canvas to create a simple maze game, use mouse to play it!"
+        },
         { 
             name: "flex-vertical-table",
             desc: "CSS practice - Use flexbox to make the table alignment from horizontal to vertical"
@@ -54,9 +58,9 @@
             name: "flex-echarts",
             desc: "CSS practice - Implement responsive width for Echarts with flex display"
         },
-        {
-            name: "simple-maze-game",
-            desc: "Use canvas to create a simple maze game, use mouse to play it!"
+        { 
+            name: "animation-number",
+            desc: "CSS practice - Change number with CSS animation"
         },
     ];
 </script>

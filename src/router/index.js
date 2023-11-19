@@ -6,6 +6,7 @@ import ImagesDownloader from "@/components/vue3-plugin-components/image-download
 import GridLayout from "@/components/vue3-plugin-components/grid-layout.vue";
 import FlexVerticalTable from "@/components/css-practice/flex-vertical-table.vue";
 import FlexEcharts from "@/components/css-practice/flex-echarts.vue";
+import AnimationNumber from "@/components/css-practice/animation-number.vue";
 import SimpleMazeGame from "@/components/game/simple-maze-game.vue";
 
 const router = createRouter({
@@ -45,6 +46,11 @@ const router = createRouter({
             path: "/flex-echarts",
             name: "flex-echarts",
             component: FlexEcharts,
+        },
+        {
+            path: "/animation-number",
+            name: "animation-number",
+            component: AnimationNumber,
         },
         {
             path: "/simple-maze-game",
